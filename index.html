@@ -12,24 +12,35 @@
             <a href="#home"><img src="https://www.creativefabrica.com/wp-content/uploads/2019/03/Monogram-LV-Logo-Design-by-Greenlines-Studios.jpg" alt="Logo"></a>
         </div>
         <nav>
-            <ul>
+            <ul class="nav-links">
                 <li><a href="#about">About Me</a></li>
                 <li><a href="#projects">Projects</a></li>
                 <li><a href="#contact">Contact</a></li>
             </ul>
+            <div class="burger">
+                <div class="line1"></div>
+                <div class="line2"></div>
+                <div class="line3"></div>
+            </div>
         </nav>
     </header>
     
     <main id="projects">
-        <section id="welcome">
-            <h1>Welcome to my website!</h1>
-            <p>
-                I am delighted to have you here, where you can explore a collection of my personal projects focused on software development and Robotic Process Automation (RPA).
-                This platform is designed to showcase my expertise and passion for these cutting-edge technologies. Whether you're a potential employer seeking a skilled developer or an enthusiast looking for innovative solutions, I believe you will find valuable insights and inspiration within the digital realm of my work.
-            </p>
-            <p>
-                I hope you enjoy exploring my projects and witnessing the impact of software development and RPA in action. If you have any questions or potential collaborations, please don't hesitate to reach out. Together, let's revolutionize the digital landscape and unlock the true potential of technology!
-            </p>
+        <section id="welcome" class="hero">
+            <div class="hero-text">
+                <h1>Welcome to My Website!</h1>
+                <p>
+                    Explore my projects on software development and Robotic Process Automation (RPA). This platform is designed to showcase my expertise and passion for these cutting-edge technologies. Whether you're a potential employer seeking a skilled developer or an enthusiast looking for innovative solutions, you will find valuable insights and inspiration within my work.
+                </p>
+                <p>
+                    I hope you enjoy exploring my projects and witnessing the impact of software development and RPA in action. If you have any questions or potential collaborations, please don't hesitate to reach out. Together, let's revolutionize the digital landscape and unlock the true potential of technology!
+                </p>
+            </div>
+            <div class="hero-image carousel">
+                <img src="images/wdd130-Project1.png" alt="Hero Image 1">
+                <img src="images/wdd130-Project2.png" alt="Hero Image 2">
+                <img src="images/wdd130-Project1.png" alt="Hero Image 3">
+            </div>
         </section>
         
         <h1>My Projects</h1>
@@ -37,18 +48,18 @@
             <!-- Project 1 -->
             <div class="project">
                 <a href="https://lizandrov.github.io/wdd130/projects/index.html" target="_blank">
-                    <img src="https://lizandrov.github.io/wdd130/projects/screenshot.png" alt="Project 1">
+                    <img src="images/wdd130-Project1.png" alt="Project 1">
                     <h2>Project 1: WDD130</h2>
                 </a>
-                <p>Brief description of project 1.</p>
+                <p>Old Portfolio Page.</p>
             </div>
             <!-- Project 2 -->
             <div class="project">
                 <a href="https://lizandrov.github.io/WEB-TSCSEARCH/index.html" target="_blank">
-                    <img src="https://lizandrov.github.io/WEB-TSCSEARCH/screenshot.png" alt="Project 2">
+                    <img src="images/wdd130-Project2.png" alt="Project 2">
                     <h2>Project 2: WEB-TSCSEARCH</h2>
                 </a>
-                <p>Brief description of project 2.</p>
+                <p>Inventory application developed for the company TSC.</p>
             </div>
             <!-- Add more projects here -->
         </div>
@@ -57,5 +68,7 @@
     <footer>
         <p>&copy; 2024 My Name. All rights reserved.</p>
     </footer>
+
+    <script src="scripts/main.js"></script>
 </body>
 </html>

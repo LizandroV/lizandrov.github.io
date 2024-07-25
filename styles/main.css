@@ -44,6 +44,19 @@ nav a:hover {
     color: #ffcc00;
 }
 
+.burger {
+    display: none;
+    cursor: pointer;
+}
+
+.burger div {
+    width: 25px;
+    height: 3px;
+    background-color: #fff;
+    margin: 5px;
+    transition: all 0.3s ease;
+}
+
 main {
     padding: 20px;
     text-align: center;
@@ -52,6 +65,55 @@ main {
 main h1 {
     margin-bottom: 20px;
     color: #333;
+}
+
+.hero {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: left;
+    margin-bottom: 40px;
+    padding: 20px;
+}
+
+.hero-text {
+    flex: 1;
+    max-width: 600px;
+    margin-right: 20px;
+}
+
+.hero-text h1 {
+    font-size: 2.5em;
+    color: #333;
+    margin-bottom: 20px;
+    font-family: 'Georgia', serif;
+    font-weight: bold;
+}
+
+.hero-text p {
+    font-size: 1.2em;
+    line-height: 1.5;
+    margin-bottom: 20px;
+}
+
+.hero-image {
+    flex: 1;
+    max-width: 300px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+}
+
+.hero-image img {
+    width: 100%;
+    border-radius: 10px;
+    position: absolute;
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+}
+
+.hero-image img:first-child {
+    opacity: 1;
 }
 
 .projects-container {
@@ -84,7 +146,7 @@ main h1 {
 }
 
 .project:hover {
-    transform: translateY(-10px);
+    transform: scale(1.05);
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
 }
 
@@ -104,5 +166,40 @@ footer {
     nav ul {
         flex-direction: column;
         gap: 10px;
+        display: none;
+    }
+
+    nav ul.active {
+        display: flex;
+    }
+
+    .burger {
+        display: block;
+    }
+
+    .burger.toggle .line1 {
+        transform: rotate(-45deg) translate(-5px, 6px);
+    }
+
+    .burger.toggle .line2 {
+        opacity: 0;
+    }
+
+    .burger.toggle .line3 {
+        transform: rotate(45deg) translate(-5px, -6px);
+    }
+
+    .hero {
+        flex-direction: column;
+    }
+
+    .hero-image {
+        max-width: 100%;
+        margin-top: 20px;
+    }
+
+    .hero-text {
+        text-align: center;
+        margin-bottom: 20px;
     }
 }
