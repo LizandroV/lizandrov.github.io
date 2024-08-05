@@ -23,3 +23,62 @@ document.addEventListener("DOMContentLoaded", function() {
         burger.classList.toggle("toggle");
     });
 });
+
+/////////// COPYRIGHT YEAR BUTTON  ///////////
+document.querySelector('#year').textContent = new Date().getFullYear();
+
+// TRADUCCIONES //
+document.addEventListener('DOMContentLoaded', () => {
+    const langButton = document.getElementById('lang-btn');
+    const language = localStorage.getItem('language') || 'en';
+    const translations = {};
+
+    function loadTranslations(lang) {
+        fetch(`locales/${lang}.json`)
+            .then(response => response.json())
+            .then(data => {
+                Object.assign(translations, data);
+                translatePage();
+            });
+    }
+
+    function translatePage() {
+        document.querySelectorAll('[data-translate]').forEach(element => {
+            const key = element.getAttribute('data-translate');
+            if (translations[key]) {
+                element.textContent = translations[key];
+            }
+        });
+
+        if (langButton) {
+            langButton.textContent = language === 'en' ? 'Español' : 'English';
+        }
+
+        // Translate lists
+        const languagesList = document.getElementById('languages-list');
+        if (languagesList) {
+            translations.languagesList.forEach(language => {
+                const li = document.createElement('li');
+                li.textContent = language;
+                languagesList.appendChild(li);
+            });
+        }
+
+        const hobbiesList = document.getElementById('hobbies-list');
+        if (hobbiesList) {
+            translations.hobbiesList.forEach(hobby => {
+                const li = document.createElement('li');
+                li.textContent = hobby;
+                hobbiesList.appendChild(li);
+            });
+        }
+    }
+
+    langButton.addEventListener('click', () => {
+        const newLang = language === 'en' ? 'es' : 'en';
+        localStorage.setItem('language', newLang);
+        window.location.reload(); // Reload to apply language change
+    });
+
+    loadTranslations(language);
+});

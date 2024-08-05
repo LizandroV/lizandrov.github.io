@@ -26,13 +26,14 @@
 <body>
     <header>
         <div class="logo">
-            <a href="./index.html"><img src="images/android-chrome-512x512.png" alt="Logo"></a>
+            <a href="./"><img src="images/android-chrome-512x512.png" alt="Logo"></a>
         </div>
         <nav>
             <ul class="nav-links">
-                <li><a href="#about">About Me</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#contact">Contact</a></li>
+                <li><a href="./aboutme.html" data-translate="aboutMeLink">About Me</a></li>
+                <li><a href="./projects.html" data-translate="projectsLink">Projects</a></li>
+                <li><a href="./contact.html" data-translate="contactLink">Contact</a></li>
+                <li><button id="lang-btn" class="button" data-translate="switchLanguage">Español</button></li>
             </ul>
             <div class="burger">
                 <div class="line1"></div>
@@ -42,48 +43,90 @@
         </nav>
     </header>
     
-    <main id="projects">
-        <section id="welcome" class="hero">
-            <div class="hero-text">
-                <h1>Welcome to My Website!</h1>
-                <p>
-                    Explore my projects on software development and Robotic Process Automation (RPA). This platform is designed to showcase my expertise and passion for these cutting-edge technologies. Whether you're a potential employer seeking a skilled developer or an enthusiast looking for innovative solutions, you will find valuable insights and inspiration within my work.
-                </p>
-                <p>
-                    I hope you enjoy exploring my projects and witnessing the impact of software development and RPA in action. If you have any questions or potential collaborations, please don't hesitate to reach out. Together, let's revolutionize the digital landscape and unlock the true potential of technology!
-                </p>
-            </div>
-            <div class="hero-image carousel">
-                <img src="images/wdd130-Project1.png" alt="Hero Image 1">
-                <img src="images/wdd130-Project2.png" alt="Hero Image 2">
-                <img src="images/wdd130-Project1.png" alt="Hero Image 3">
-            </div>
-        </section>
-        
-        <h1>My Projects</h1>
-        <div class="projects-container">
-            <!-- Project 1 -->
+    <main>
+        <h1 data-translate="pageTitle">My Projects</h1>
+        <section class="category">
+            <h2 data-translate="webDevTitle">Web Development</h2>
             <div class="project">
-                <a href="https://lizandrov.github.io/wdd130/projects/index.html" target="_blank">
-                    <img src="images/wdd130-Project1.png" alt="Project 1">
-                    <h2>Project 1: WDD130</h2>
-                </a>
-                <p>Old Portfolio Page.</p>
-            </div>
-            <!-- Project 2 -->
-            <div class="project">
-                <a href="https://lizandrov.github.io/WEB-TSCSEARCH/index.html" target="_blank">
-                    <img src="images/wdd130-Project2.png" alt="Project 2">
-                    <h2>Project 2: WEB-TSCSEARCH</h2>
-                </a>
-                <p>Inventory application developed for the company TSC.</p>
+                <img src="path-to-project1-image.jpg" alt="Project 1 Screenshot">
+                <div class="project-info">
+                    <h3><a href="https://github.com/yourusername/project1" target="_blank" data-translate="project1Title">Project 1</a></h3>
+                    <p data-translate="project1Desc">Description of project 1. This project involves developing a web application using HTML, CSS, and JavaScript.</p>
+                    <div class="technologies">
+                        <img src="path-to-html-icon.png" alt="HTML" data-translate="htmlIcon">
+                        <img src="path-to-css-icon.png" alt="CSS" data-translate="cssIcon">
+                        <img src="path-to-js-icon.png" alt="JavaScript" data-translate="jsIcon">
+                    </div>
+                </div>
             </div>
             <!-- Add more projects here -->
-        </div>
+        </section>
+        
+        <section class="category">
+            <h2 data-translate="mobileDevTitle">Mobile Development</h2>
+            <div class="project">
+                <img src="path-to-project2-image.jpg" alt="Project 2 Screenshot">
+                <div class="project-info">
+                    <h3><a href="https://github.com/yourusername/project2" target="_blank" data-translate="project2Title">Project 2</a></h3>
+                    <p data-translate="project2Desc">Description of project 2. This project involves developing a mobile application using Flutter and Dart.</p>
+                    <div class="technologies">
+                        <img src="path-to-flutter-icon.png" alt="Flutter" data-translate="flutterIcon">
+                        <img src="path-to-dart-icon.png" alt="Dart" data-translate="dartIcon">
+                    </div>
+                </div>
+            </div>
+            <!-- Add more projects here -->
+        </section>
+
+        <section class="category">
+            <h2 data-translate="desktopDevTitle">Desktop Development</h2>
+            <div class="project">
+                <img src="path-to-project3-image.jpg" alt="Project 3 Screenshot">
+                <div class="project-info">
+                    <h3><a href="https://github.com/yourusername/project3" target="_blank" data-translate="project3Title">Project 3</a></h3>
+                    <p data-translate="project3Desc">Description of project 3. This project involves developing a desktop application using C# and .NET.</p>
+                    <div class="technologies">
+                        <img src="path-to-csharp-icon.png" alt="C#" data-translate="csharpIcon">
+                        <img src="path-to-dotnet-icon.png" alt=".NET" data-translate="dotnetIcon">
+                    </div>
+                </div>
+            </div>
+            <!-- Add more projects here -->
+        </section>
+
+        <section class="category">
+            <h2 data-translate="rpaDevTitle">RPA Development</h2>
+            <div class="project">
+                <img src="path-to-project4-image.jpg" alt="Project 4 Screenshot">
+                <div class="project-info">
+                    <h3><a href="https://github.com/yourusername/project4" target="_blank" data-translate="project4Title">Project 4</a></h3>
+                    <p data-translate="project4Desc">Description of project 4. This project involves developing an RPA solution using UiPath and Python.</p>
+                    <div class="technologies">
+                        <img src="path-to-uipath-icon.png" alt="UiPath" data-translate="uipathIcon">
+                        <img src="path-to-python-icon.png" alt="Python" data-translate="pythonIcon">
+                    </div>
+                </div>
+            </div>
+            <!-- Add more projects here -->
+        </section>
     </main>
     
     <footer>
-        <p>&copy; 2024 My Name. All rights reserved.</p>
+        &copy;<span id="year"></span> | Lizandro Vivanco
+        <div class="social">
+            <a href="https://www.facebook.com/lizandro.vivanco.1251" target="_blank">
+                <img src="images/facebook.png" alt="Facebook icon">
+            </a>
+            <a href="https://www.instagram.com/lizandrov16/" target="_blank">
+                <img src="images/instagram.png" alt="Instagram icon">
+            </a>
+            <a href="https://github.com/LizandroV" target="_blank">
+                <img src="images/Github.png" alt="Github icon">
+            </a>
+            <a href="https://www.linkedin.com/in/lvivanco16/?locale=en_US" target="_blank">
+                <img src="images/LinkedIn.png" alt="Linkedin icon">
+            </a>
+        </div>
     </footer>
 
     <script src="scripts/main.js"></script>

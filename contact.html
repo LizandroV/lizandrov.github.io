@@ -26,13 +26,14 @@
 <body>
     <header>
         <div class="logo">
-            <a href="./index.html"><img src="images/android-chrome-512x512.png" alt="Logo"></a>
+            <a href="./"><img src="images/android-chrome-512x512.png" alt="Logo"></a>
         </div>
         <nav>
             <ul class="nav-links">
-                <li><a href="#about">About Me</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#contact">Contact</a></li>
+                <li><a href="./aboutme.html" data-translate="aboutMeLink">About Me</a></li>
+                <li><a href="./projects.html" data-translate="projectsLink">Projects</a></li>
+                <li><a href="./contact.html" data-translate="contactLink">Contact</a></li>
+                <li><button id="lang-btn" class="button" data-translate="switchLanguage">Español</button></li>
             </ul>
             <div class="burger">
                 <div class="line1"></div>
@@ -42,50 +43,55 @@
         </nav>
     </header>
     
-    <main id="projects">
-        <section id="welcome" class="hero">
-            <div class="hero-text">
-                <h1>Welcome to My Website!</h1>
-                <p>
-                    Explore my projects on software development and Robotic Process Automation (RPA). This platform is designed to showcase my expertise and passion for these cutting-edge technologies. Whether you're a potential employer seeking a skilled developer or an enthusiast looking for innovative solutions, you will find valuable insights and inspiration within my work.
-                </p>
-                <p>
-                    I hope you enjoy exploring my projects and witnessing the impact of software development and RPA in action. If you have any questions or potential collaborations, please don't hesitate to reach out. Together, let's revolutionize the digital landscape and unlock the true potential of technology!
-                </p>
-            </div>
-            <div class="hero-image carousel">
-                <img src="images/wdd130-Project1.png" alt="Hero Image 1">
-                <img src="images/wdd130-Project2.png" alt="Hero Image 2">
-                <img src="images/wdd130-Project1.png" alt="Hero Image 3">
-            </div>
-        </section>
-        
-        <h1>My Projects</h1>
-        <div class="projects-container">
-            <!-- Project 1 -->
-            <div class="project">
-                <a href="https://lizandrov.github.io/wdd130/projects/index.html" target="_blank">
-                    <img src="images/wdd130-Project1.png" alt="Project 1">
-                    <h2>Project 1: WDD130</h2>
-                </a>
-                <p>Old Portfolio Page.</p>
-            </div>
-            <!-- Project 2 -->
-            <div class="project">
-                <a href="https://lizandrov.github.io/WEB-TSCSEARCH/index.html" target="_blank">
-                    <img src="images/wdd130-Project2.png" alt="Project 2">
-                    <h2>Project 2: WEB-TSCSEARCH</h2>
-                </a>
-                <p>Inventory application developed for the company TSC.</p>
-            </div>
-            <!-- Add more projects here -->
+    <main>
+        <h1 data-translate="contactTitle">Contact Me</h1>
+        <div class="contact-info">
+            <p><strong data-translate="emailLabel">Email:</strong> <span data-translate="email">youremail@example.com</span></p>
+            <p><strong data-translate="phoneLabel">Phone:</strong> <span data-translate="phone">+123-456-7890</span></p>
+            <p><strong data-translate="addressLabel">Address:</strong> <span data-translate="address">123 Main Street, Hometown, Country</span></p>
         </div>
+        <div class="map">
+            <iframe 
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3165.898299925715!2d-122.08424968490812!3d37.42199997982544!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x808fb5b60aebc871%3A0x4b5bb15a8407a7a6!2sGoogleplex!5e0!3m2!1sen!2sus!4v1600227264658!5m2!1sen!2sus" 
+                width="600" 
+                height="450" 
+                style="border:0;" 
+                allowfullscreen="" 
+                loading="lazy">
+            </iframe>
+        </div>
+        <h2 data-translate="contactFormTitle">Contact Form</h2>
+        <form action="mailto:youremail@example.com" method="post" enctype="text/plain">
+            <label for="name" data-translate="nameLabel">Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email" data-translate="emailLabel">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="message" data-translate="messageLabel">Message:</label>
+            <textarea id="message" name="message" rows="5" required></textarea>
+
+            <button type="submit" data-translate="sendButton">Send</button>
+        </form>
     </main>
     
     <footer>
-        <p>&copy; 2024 My Name. All rights reserved.</p>
+        &copy;<span id="year"></span> | Lizandro Vivanco
+        <div class="social">
+            <a href="https://www.facebook.com/lizandro.vivanco.1251" target="_blank">
+                <img src="images/facebook.png" alt="Facebook icon">
+            </a>
+            <a href="https://www.instagram.com/lizandrov16/" target="_blank">
+                <img src="images/instagram.png" alt="Instagram icon">
+            </a>
+            <a href="https://github.com/LizandroV" target="_blank">
+                <img src="images/Github.png" alt="Github icon">
+            </a>
+            <a href="https://www.linkedin.com/in/lvivanco16/?locale=en_US" target="_blank">
+                <img src="images/LinkedIn.png" alt="Linkedin icon">
+            </a>
+        </div>
     </footer>
-
     <script src="scripts/main.js"></script>
 </body>
 </html>
