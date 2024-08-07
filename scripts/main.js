@@ -53,31 +53,12 @@ document.addEventListener('DOMContentLoaded', () => {
         if (langButton) {
             langButton.textContent = language === 'en' ? 'Español' : 'English';
         }
-
-        // Translate lists
-        const languagesList = document.getElementById('languages-list');
-        if (languagesList) {
-            translations.languagesList.forEach(language => {
-                const li = document.createElement('li');
-                li.textContent = language;
-                languagesList.appendChild(li);
-            });
-        }
-
-        const hobbiesList = document.getElementById('hobbies-list');
-        if (hobbiesList) {
-            translations.hobbiesList.forEach(hobby => {
-                const li = document.createElement('li');
-                li.textContent = hobby;
-                hobbiesList.appendChild(li);
-            });
-        }
     }
 
     langButton.addEventListener('click', () => {
         const newLang = language === 'en' ? 'es' : 'en';
         localStorage.setItem('language', newLang);
-        window.location.reload(); // Reload to apply language change
+        window.location.reload();
     });
 
     loadTranslations(language);
