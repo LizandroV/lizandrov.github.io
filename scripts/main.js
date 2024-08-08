@@ -1,20 +1,5 @@
 document.addEventListener("DOMContentLoaded", function() {
-    const images = document.querySelectorAll(".carousel img");
-    let currentIndex = 0;
-
-    function showNextImage() {
-        images[currentIndex].style.opacity = 0;
-        currentIndex = (currentIndex + 1) % images.length;
-        images[currentIndex].style.opacity = 1;
-    }
-
-    images.forEach((img, index) => {
-        if (index !== 0) img.style.opacity = 0;
-    });
-
-    setInterval(showNextImage, 8000);
-
-    // Menu hamburguesa
+    //HAMBUERGER MENU//
     const burger = document.querySelector(".burger");
     const navLinks = document.querySelector(".nav-links");
 
@@ -22,13 +7,11 @@ document.addEventListener("DOMContentLoaded", function() {
         navLinks.classList.toggle("active");
         burger.classList.toggle("toggle");
     });
-});
 
-/////////// COPYRIGHT YEAR BUTTON  ///////////
-document.querySelector('#year').textContent = new Date().getFullYear();
+    //COPYRIGHT YEAR//
+    document.querySelector('#year').textContent = new Date().getFullYear();
 
-// TRADUCCIONES //
-document.addEventListener('DOMContentLoaded', () => {
+    //TRADUCCIONES//
     const langButton = document.getElementById('lang-btn');
     const language = localStorage.getItem('language') || 'en';
     const translations = {};
@@ -49,6 +32,24 @@ document.addEventListener('DOMContentLoaded', () => {
                 element.textContent = translations[key];
             }
         });
+    
+        const languagesList = document.getElementById('languages-list');
+        if (languagesList) {
+            translations.languagesList.forEach(language => {
+                const li = document.createElement('li');
+                li.textContent = language;
+                languagesList.appendChild(li);
+        });
+        }
+
+        const hobbiesList = document.getElementById('hobbies-list');
+        if (hobbiesList) {
+            translations.hobbiesList.forEach(hobby => {
+                const li = document.createElement('li');
+                li.textContent = hobby;
+                hobbiesList.appendChild(li);
+            });
+        }
 
         if (langButton) {
             langButton.textContent = language === 'en' ? 'Español' : 'English';
@@ -62,4 +63,9 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 
     loadTranslations(language);
+
 });
+
+
+
+
