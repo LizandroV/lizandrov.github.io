@@ -22,6 +22,9 @@
     "languagesTitle": "Lenguajes Aprendidos:",
     "languagesList": ["HTML", "CSS", "JavaScript", "Python", "C#", "SQL"],
 
+    "technologiesTitle": "Tecnologias Aprendidas:",
+    "technologiesList": ["Power BI", "Oficce 365 Admin", "Eset Admin", "Windows Server Admin", "Fortinet", "WordPress"],
+
     "hobbiesTitle": "Pasatiempos:",
     "hobbiesList": ["Leer blogs de tecnología", "Programar proyectos personales", "Explorar nuevas tecnologías", "Jugar videojuegos", "Andar en bicicleta", "Tocar Guitarra"],
     "programmerTitle": "Sobre Mí como Programador:",

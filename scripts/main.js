@@ -33,6 +33,15 @@ document.addEventListener("DOMContentLoaded", function() {
             }
         });
     
+        const technologiesList = document.getElementById('technologies-list');
+        if (technologiesList) {
+            translations.technologiesList.forEach(tech => {
+                const li = document.createElement('li');
+                li.textContent = tech;
+                technologiesList.appendChild(li);
+        });
+        }
+
         const languagesList = document.getElementById('languages-list');
         if (languagesList) {
             translations.languagesList.forEach(language => {
