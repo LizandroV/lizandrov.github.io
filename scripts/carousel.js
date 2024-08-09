@@ -24,7 +24,7 @@ document.addEventListener("DOMContentLoaded", function() {
 
     function updateCvLink() {
         if (cvLink) {
-            cvLink.href = cvLinks[language] 
+            cvLink.action = cvLinks[language] 
         }
     }
 
