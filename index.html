@@ -16,6 +16,9 @@
         <meta name="theme-color" content="#ffffff">
         <!-- STYLES -->
         <link rel="stylesheet" href="styles/main.css">
+        <!-- FONTS -->
+        <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Lemon&family=Permanent+Marker&display=swap" rel="stylesheet">
         <!-- META TAGS -->
         <meta property="og:title" content="My Portfolio | LV">
         <meta property="og:type" content="website">
@@ -33,7 +36,7 @@
                 <li><a href="./aboutme.html" data-translate="aboutMe">About Me</a></li>
                 <li><a href="./projects.html" data-translate="projects">Projects</a></li>
                 <li><a href="./contact.html" data-translate="contact">Contact</a></li>
-                <li><button id="lang-btn" class="button" data-translate="switchLanguage"></button></li>
+                <li><button id="lang-btn" data-translate="switchLanguage"></button></li>
             </ul>
             <div class="burger">
                 <div class="line1"></div>
@@ -43,7 +46,7 @@
         </nav>
     </header>
     
-    <main id="projects">
+    <main>
         <section id="welcome" class="hero">
             <div class="hero-text">
                 <h1 data-translate="welcomeTitle">Welcome to My Website!</h1>
@@ -59,7 +62,7 @@
             </div>
         </section>
         
-        <h1 data-translate="projectsTitle">Featured Projects:</h1>
+        <h2 class="projectsTitle" data-translate="projectsTitle">Featured Projects:</h2>
         <div class="projects-container">
             <!-- Project 1 -->
             <div class="project">
@@ -97,7 +100,7 @@
     </main>
     
     <footer>
-        &copy;<span id="year"></span> | Lizandro Vivanco
+        <p>&copy;<span id="year"></span> | Lizandro Vivanco</p>
         <div class="social">
             <a href="https://github.com/LizandroV" target="_blank">
                 <img src="images/Github.png" alt="Github icon">

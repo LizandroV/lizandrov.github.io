@@ -16,6 +16,9 @@
     <meta name="theme-color" content="#ffffff">
     <!-- STYLES -->
     <link rel="stylesheet" href="styles/main.css">
+    <!-- FONTS -->
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lemon&family=Permanent+Marker&display=swap" rel="stylesheet">
     <!-- META TAGS -->
     <meta property="og:title" content="My Portfolio | LV">
     <meta property="og:type" content="website">
@@ -33,7 +36,7 @@
                 <li><a href="./aboutme.html" data-translate="aboutMe">About Me</a></li>
                 <li><a href="./projects.html" data-translate="projects">Projects</a></li>
                 <li><a href="./contact.html" data-translate="contact">Contact</a></li>
-                <li><button id="lang-btn" class="button" data-translate="switchLanguage"></button></li>
+                <li><button id="lang-btn" data-translate="switchLanguage"></button></li>
             </ul>
             <div class="burger">
                 <div class="line1"></div>
@@ -45,8 +48,35 @@
     
     <main>
         <h1 data-translate="pageTitle">My Projects</h1>
+        <h2 class="projectTitle" data-translate="webDevTitle">Web Development</h2>
         <section class="category">
-            <h2 data-translate="webDevTitle">Web Development</h2>
+
+            <div class="project">
+                <img src="images/wdd130-Project1.png" alt="Project 1 Screenshot">
+                <div class="project-info">
+                    <h3><a href="https://github.com/yourusername/project1" target="_blank" data-translate="project1Title">Project 1</a></h3>
+                    <p data-translate="project1Desc">Description of project 1. This project involves developing a web application using HTML, CSS, and JavaScript.</p>
+                    <div class="technologies">
+                        <img src="images/html.png" alt="HTML">
+                        <img src="images/css.webp" alt="CSS">
+                        <img src="images/javascript.webp" alt="JavaScript">
+                    </div>
+                </div>
+            </div>
+
+            <div class="project">
+                <img src="images/wdd130-Project1.png" alt="Project 1 Screenshot">
+                <div class="project-info">
+                    <h3><a href="https://github.com/yourusername/project1" target="_blank" data-translate="project1Title">Project 1</a></h3>
+                    <p data-translate="project1Desc">Description of project 1. This project involves developing a web application using HTML, CSS, and JavaScript.</p>
+                    <div class="technologies">
+                        <img src="images/html.png" alt="HTML">
+                        <img src="images/css.webp" alt="CSS">
+                        <img src="images/javascript.webp" alt="JavaScript">
+                    </div>
+                </div>
+            </div>
+
             <div class="project">
                 <img src="images/wdd130-Project1.png" alt="Project 1 Screenshot">
                 <div class="project-info">
@@ -61,8 +91,9 @@
             </div>
         </section>
         
+        <h2 class="projectTitle" data-translate="mobileDevTitle">Mobile Development</h2>
         <section class="category">
-            <h2 data-translate="mobileDevTitle">Mobile Development</h2>
+
             <div class="project">
                 <img src="images/wdd130-Project2.png" alt="Project 2 Screenshot">
                 <div class="project-info">
@@ -74,11 +105,23 @@
                     </div>
                 </div>
             </div>
-            <!-- Add more projects here -->
+
+            <div class="project">
+                <img src="images/wdd130-Project2.png" alt="Project 2 Screenshot">
+                <div class="project-info">
+                    <h3><a href="https://github.com/yourusername/project2" target="_blank" data-translate="project2Title">Project 2</a></h3>
+                    <p data-translate="project2Desc">Description of project 2. This project involves developing a mobile application using Flutter and Dart.</p>
+                    <div class="technologies">
+                        <img src="images/c-sharp.png" alt="C#">
+                        <img src="images/python.png" alt="Python">
+                    </div>
+                </div>
+            </div>
         </section>
 
+        <h2 class="projectTitle" data-translate="desktopDevTitle">Desktop Development</h2>
         <section class="category">
-            <h2 data-translate="desktopDevTitle">Desktop Development</h2>
+
             <div class="project">
                 <img src="images/wdd130-Project3.png" alt="Project 3 Screenshot">
                 <div class="project-info">
@@ -90,11 +133,23 @@
                     </div>
                 </div>
             </div>
-            <!-- Add more projects here -->
+
+            <div class="project">
+                <img src="images/wdd130-Project3.png" alt="Project 3 Screenshot">
+                <div class="project-info">
+                    <h3><a href="https://github.com/yourusername/project3" target="_blank" data-translate="project3Title">Project 3</a></h3>
+                    <p data-translate="project3Desc">Description of project 3. This project involves developing a desktop application using C# and .NET.</p>
+                    <div class="technologies">
+                        <img src="images/c-sharp.png" alt="C#">
+                        <img src="images/python.png" alt="Python">
+                    </div>
+                </div>
+            </div>
         </section>
 
+        <h2 class="projectTitle" data-translate="rpaDevTitle">RPA Development</h2>
         <section class="category">
-            <h2 data-translate="rpaDevTitle">RPA Development</h2>
+
             <div class="project">
                 <img src="images/wdd230-Classes1.png" alt="Project 4 Screenshot">
                 <div class="project-info">
@@ -107,12 +162,24 @@
                     </div>
                 </div>
             </div>
-            <!-- Add more projects here -->
+            
+            <div class="project">
+                <img src="images/wdd230-Classes1.png" alt="Project 4 Screenshot">
+                <div class="project-info">
+                    <h3><a href="https://github.com/yourusername/project4" target="_blank" data-translate="project4Title">Project 4</a></h3>
+                    <p data-translate="project4Desc">Description of project 4. This project involves developing an RPA solution using UiPath and Python.</p>
+                    <div class="technologies">
+                        <img src="images/sikuli.jpeg" alt="Sikuli">
+                        <img src="images/python.png" alt="Python">
+                        <img src="images/uipath.webp" alt="UiPath">
+                    </div>
+                </div>
+            </div>
         </section>
     </main>
     
     <footer>
-        &copy;<span id="year"></span> | Lizandro Vivanco
+        <p>&copy;<span id="year"></span> | Lizandro Vivanco</p>
         <div class="social">
             <a href="https://github.com/LizandroV" target="_blank">
                 <img src="images/Github.png" alt="Github icon">
