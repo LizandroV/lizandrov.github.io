@@ -214,6 +214,13 @@ button:hover {
     color: var(--primary-color);
 }
 
+.project:hover{
+    transform: scale(1.05);
+    cursor: pointer;
+    -webkit-box-shadow: 10px 10px 23px -7px rgba(0,0,0,0.75);
+    -moz-box-shadow: 10px 10px 23px -7px rgba(0,0,0,0.75);
+    box-shadow: 10px 10px 23px -7px rgba(0,0,0,0.75);
+}
 /* END PROJECT - INDEX */
 
 /* START FOOTER */
@@ -306,23 +313,15 @@ footer .social img:hover {
     justify-items: center;
 }
 
-.project-info {
-    text-align: left;
-}
-
-.project-info h3 {
+.project h3 {
     margin-top: 0;
+    text-align: start;
 }
 
-.project-info a {
-    text-decoration: none;
-    color: #1e1e1e;
-    font-size: 22px;
-}
-
-.project-info p {
-    color: #666;
+.project p {
+    color: #3a3a3a;
     line-height: 1.6;
+    text-align: start;
 }
 
 .technologies {
