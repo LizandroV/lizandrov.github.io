@@ -38,7 +38,7 @@
 
     "desktopDevTitle": "Desktop Development",
     "3project1Title": "BACKUP - REPORT",
-    "3project1Desc": "Automates the daily review of backups on servers, sends daily report on the status of backups.",
+    "3project1Desc": "Automates the daily review of backups on servers.",
     "3project2Title": "ETON - BACKUP",
     "3project2Desc": "It compresses files, moves them and displays a history of moves.",
     "3project3Title": "AUTORENAME - PDF",

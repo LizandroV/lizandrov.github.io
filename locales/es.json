@@ -37,7 +37,7 @@
 
     "desktopDevTitle": "Desarrollo de Escritorio",
     "3project1Title": "BACKUP - REPORTE",
-    "3project1Desc": "Automatiza la revisión diaria de respaldos en los servidores, envía reporte diario del estado de los Backups.",
+    "3project1Desc": "Automatiza la revisión diaria de respaldos en los servidores.",
     "3project2Title": "ETON - BACKUP",
     "3project2Desc": "Comprime los archivos, los traslada y muestra un historial de traslados.",
     "3project3Title": "AUTORENAME - PDF",
