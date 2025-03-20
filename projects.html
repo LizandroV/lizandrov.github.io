@@ -1,261 +1,325 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>My Portfolio | LV</title>
-    <meta name="description" content="My Portfolio">
-    <meta name="author" content="Lizandro Vivanco">
+    <meta name="description" content="My Portfolio" />
+    <meta name="author" content="Lizandro Vivanco" />
     <!-- FAVICON -->
-    <link rel="apple-touch-icon" sizes="180x180" href="images/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="images/favicon-16x16.png">
-    <link rel="manifest" href="images/site.webmanifest">
-    <link rel="mask-icon" href="images/safari-pinned-tab.svg" color="#5bbad5">
-    <meta name="msapplication-TileColor" content="#da532c">
-    <meta name="theme-color" content="#ffffff">
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="images/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="images/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="images/favicon-16x16.png"
+    />
+    <link rel="manifest" href="images/site.webmanifest" />
+    <link rel="mask-icon" href="images/safari-pinned-tab.svg" color="#5bbad5" />
+    <meta name="msapplication-TileColor" content="#da532c" />
+    <meta name="theme-color" content="#ffffff" />
     <!-- STYLES -->
-    <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="styles/main.css" />
     <!-- FONTS -->
-    <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Lemon&family=Permanent+Marker&display=swap" rel="stylesheet">
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lemon&family=Permanent+Marker&display=swap"
+      rel="stylesheet"
+    />
     <!-- META TAGS -->
-    <meta property="og:title" content="My Portfolio | LV">
-    <meta property="og:type" content="website">
-    <meta property="og:image" content="https://i.postimg.cc/ctGFgHjf/LV-Logo.jpg">
-    <meta property="og:url" content="https://lizandrov.github.io/">
-    <meta name="twitter:card" content="summary_large_image">
-</head>
-<body>
+    <meta property="og:title" content="My Portfolio | LV" />
+    <meta property="og:type" content="website" />
+    <meta
+      property="og:image"
+      content="https://i.postimg.cc/ctGFgHjf/LV-Logo.jpg"
+    />
+    <meta property="og:url" content="https://lizandrov.github.io/" />
+    <meta name="twitter:card" content="summary_large_image" />
+  </head>
+  <body>
     <header>
-        <div class="logo">
-            <a href="./"><img src="images/android-chrome-512x512.png" alt="Logo"></a>
+      <div class="logo">
+        <a href="./"
+          ><img src="images/android-chrome-512x512.png" alt="Logo"
+        /></a>
+      </div>
+      <nav>
+        <ul class="nav-links">
+          <li>
+            <a href="./aboutme.html" data-translate="aboutMe">About Me</a>
+          </li>
+          <li>
+            <a href="./projects.html" data-translate="projects">Projects</a>
+          </li>
+          <li><a href="./contact.html" data-translate="contact">Contact</a></li>
+          <li>
+            <button id="lang-btn" data-translate="switchLanguage"></button>
+          </li>
+        </ul>
+        <div class="burger">
+          <div class="line1"></div>
+          <div class="line2"></div>
+          <div class="line3"></div>
         </div>
-        <nav>
-            <ul class="nav-links">
-                <li><a href="./aboutme.html" data-translate="aboutMe">About Me</a></li>
-                <li><a href="./projects.html" data-translate="projects">Projects</a></li>
-                <li><a href="./contact.html" data-translate="contact">Contact</a></li>
-                <li><button id="lang-btn" data-translate="switchLanguage"></button></li>
-            </ul>
-            <div class="burger">
-                <div class="line1"></div>
-                <div class="line2"></div>
-                <div class="line3"></div>
-            </div>
-        </nav>
+      </nav>
     </header>
-    
+
     <main>
-        <h1 data-translate="pageTitle">My Projects</h1>
+      <h1 data-translate="pageTitle">My Projects</h1>
 
-        <!-- Web Development -->
-        <h2 class="projectTitle" data-translate="webDevTitle">Web Development</h2>
-        <section class="category">
-            <div class="project">
-                <a href="https://github.com/LizandroV/WEB-TSCSEARCH" target="_blank">
-                    <img src="images/TSC-SEARCH.png" alt="Project 1">
-                    <h3 data-translate="1project1Title">Project 1</h3>
-                    <p data-translate="1project1Desc">Description</p>
-                    <div class="technologies">
-                        <img src="images/html.png" alt="HTML">
-                        <img src="images/css.webp" alt="CSS">
-                        <img src="images/javascript.webp" alt="JavaScript">
-                    </div>
-                </a>
+      <!-- Web Development -->
+      <h2 class="projectTitle" data-translate="webDevTitle">Web Development</h2>
+      <section class="category">
+        <div class="project">
+          <a href="https://github.com/LizandroV/WEB-TSCSEARCH" target="_blank">
+            <img src="images/TSC-SEARCH.png" alt="Project 1" />
+            <h3 data-translate="1project1Title">Project 1</h3>
+            <p data-translate="1project1Desc">Description</p>
+            <div class="technologies">
+              <img src="images/html.png" alt="HTML" />
+              <img src="images/css.webp" alt="CSS" />
+              <img src="images/javascript.webp" alt="JavaScript" />
             </div>
-            <div class="project">
-                <a href="https://github.com/LizandroV/wdd130" target="_blank">
-                    <img src="images/wdd130-Project1.png" alt="Project 2">
-                    <h3 data-translate="1project2Title">Project 2</h3>
-                    <p data-translate="1project2Desc">Description</p>
-                    <div class="technologies">
-                        <img src="images/html.png" alt="HTML">
-                        <img src="images/css.webp" alt="CSS">
-                        <img src="images/javascript.webp" alt="JavaScript">
-                    </div>
-                </a>
+          </a>
+        </div>
+        <div class="project">
+          <a href="https://github.com/LizandroV/wdd130" target="_blank">
+            <img src="images/wdd130-Project1.png" alt="Project 2" />
+            <h3 data-translate="1project2Title">Project 2</h3>
+            <p data-translate="1project2Desc">Description</p>
+            <div class="technologies">
+              <img src="images/html.png" alt="HTML" />
+              <img src="images/css.webp" alt="CSS" />
+              <img src="images/javascript.webp" alt="JavaScript" />
             </div>
-            <div class="project">
-                <a href="https://github.com/LizandroV/wdd230" target="_blank">
-                    <img src="images/wdd230-Classes1.png" alt="Project 3">
-                    <h3 data-translate="1project3Title">Project 3</h3>
-                    <p data-translate="1project3Desc">Description</p>
-                    <div class="technologies">
-                        <img src="images/html.png" alt="HTML">
-                        <img src="images/css.webp" alt="CSS">
-                        <img src="images/javascript.webp" alt="JavaScript">
-                    </div>
-                </a>
+          </a>
+        </div>
+        <div class="project">
+          <a href="https://github.com/LizandroV/wdd230" target="_blank">
+            <img src="images/wdd230-Classes1.png" alt="Project 3" />
+            <h3 data-translate="1project3Title">Project 3</h3>
+            <p data-translate="1project3Desc">Description</p>
+            <div class="technologies">
+              <img src="images/html.png" alt="HTML" />
+              <img src="images/css.webp" alt="CSS" />
+              <img src="images/javascript.webp" alt="JavaScript" />
             </div>
-        </section>
+          </a>
+        </div>
+        <div class="project">
+          <a href="https://lizandrov.github.io/Games/" target="_blank">
+            <img src="images/games.png" alt="Project 4" />
+            <h3 data-translate="1project4Title">Project 4</h3>
+            <p data-translate="1project4Desc">Description</p>
+            <div class="technologies">
+              <img src="images/html.png" alt="HTML" />
+              <img src="images/css.webp" alt="CSS" />
+              <img src="images/javascript.webp" alt="JavaScript" />
+            </div>
+          </a>
+        </div>
+      </section>
 
-        <!-- Mobile Development -->
-        <h2 class="projectTitle" data-translate="mobileDevTitle">Mobile Development</h2>
-        <section class="category">
-            <div class="project">
-                <a href="https://github.com/LizandroV/" target="_blank">
-                    <img src="images/TODO-MOVILAPP.png" alt="Project 1">
-                    <h3 data-translate="2project1Title">Project 1</h3>
-                    <p data-translate="2project1Desc">Description</p>
-                    <div class="technologies">
-                        <img src="images/c-sharp.png" alt="C#">
-                        <img src="images/maui.png" alt="Maui">
-                    </div>
-                </a>
+      <!-- Mobile Development -->
+      <h2 class="projectTitle" data-translate="mobileDevTitle">
+        Mobile Development
+      </h2>
+      <section class="category">
+        <div class="project">
+          <a href="https://github.com/LizandroV/" target="_blank">
+            <img src="images/TODO-MOVILAPP.png" alt="Project 1" />
+            <h3 data-translate="2project1Title">Project 1</h3>
+            <p data-translate="2project1Desc">Description</p>
+            <div class="technologies">
+              <img src="images/c-sharp.png" alt="C#" />
+              <img src="images/maui.png" alt="Maui" />
             </div>
-        </section>
+          </a>
+        </div>
+      </section>
 
-        <!-- Desktop Development -->
-        <h2 class="projectTitle" data-translate="desktopDevTitle">Desktop Development</h2>
-        <section class="category">
-            <div class="project">
-                <a href="https://github.com/LV-TSCAPPS/BKP_Autocheck" target="_blank">
-                    <img src="images/BKP-AUTO.png" alt="Project 1">
-                    <h3 data-translate="3project1Title">Project 1</h3>
-                    <p data-translate="3project1Desc">Description</p>
-                    <div class="technologies">
-                        <img src="images/python.png" alt="Python">
-                        <img src="images/sql.png" alt="SQL">
-                        <img src="images/powerbi.png" alt="PowerBI">
-                        <img src="images/ftp.png" alt="FTP">
-                    </div>
-                </a>
+      <!-- Desktop Development -->
+      <h2 class="projectTitle" data-translate="desktopDevTitle">
+        Desktop Development
+      </h2>
+      <section class="category">
+        <div class="project">
+          <a href="https://github.com/LV-TSCAPPS/BKP_Autocheck" target="_blank">
+            <img src="images/BKP-AUTO.png" alt="Project 1" />
+            <h3 data-translate="3project1Title">Project 1</h3>
+            <p data-translate="3project1Desc">Description</p>
+            <div class="technologies">
+              <img src="images/python.png" alt="Python" />
+              <img src="images/sql.png" alt="SQL" />
+              <img src="images/powerbi.png" alt="PowerBI" />
+              <img src="images/ftp.png" alt="FTP" />
             </div>
-            <div class="project">
-                <a href="https://github.com/LizandroV/ETON-BKP" target="_blank">
-                    <img src="images/ETON_BKP.png" alt="Project 2">
-                    <h3 data-translate="3project2Title">Project 2</h3>
-                    <p data-translate="3project2Desc">Description</p>
-                    <div class="technologies">
-                        <img src="images/python.png" alt="Python">
-                        <img src="images/ftp.png" alt="FTP">
-                    </div>
-                </a>
+          </a>
+        </div>
+        <div class="project">
+          <a href="https://github.com/LizandroV/ETON-BKP" target="_blank">
+            <img src="images/ETON_BKP.png" alt="Project 2" />
+            <h3 data-translate="3project2Title">Project 2</h3>
+            <p data-translate="3project2Desc">Description</p>
+            <div class="technologies">
+              <img src="images/python.png" alt="Python" />
+              <img src="images/ftp.png" alt="FTP" />
             </div>
-            <div class="project">
-                <a href="https://github.com/LV-TSCAPPS/AutorenamePDF" target="_blank">
-                    <img src="images/AUTORENAME_PDF.png" alt="Project 3">
-                    <h3 data-translate="3project3Title">Project 3</h3>
-                    <p data-translate="3project3Desc">Description</p>
-                    <div class="technologies">
-                        <img src="images/python.png" alt="Python">
-                        <img src="images/sql.png" alt="SQL">
-                        <img src="images/excel.jpg" alt="Excel">
-                    </div>
-                </a>
+          </a>
+        </div>
+        <div class="project">
+          <a href="https://github.com/LV-TSCAPPS/AutorenamePDF" target="_blank">
+            <img src="images/AUTORENAME_PDF.png" alt="Project 3" />
+            <h3 data-translate="3project3Title">Project 3</h3>
+            <p data-translate="3project3Desc">Description</p>
+            <div class="technologies">
+              <img src="images/python.png" alt="Python" />
+              <img src="images/sql.png" alt="SQL" />
+              <img src="images/excel.jpg" alt="Excel" />
             </div>
-            <div class="project">
-                <a href="https://github.com/LV-TSCAPPS/Forti_Update" target="_blank">
-                    <img src="images/FORTI_UPDATE.png" alt="Project 4">
-                    <h3 data-translate="3project4Title">Project 4</h3>
-                    <p data-translate="3project4Desc">Description</p>
-                    <div class="technologies">
-                        <img src="images/python.png" alt="Python">
-                    </div>
-                </a>
+          </a>
+        </div>
+        <div class="project">
+          <a href="https://github.com/LV-TSCAPPS/Forti_Update" target="_blank">
+            <img src="images/FORTI_UPDATE.png" alt="Project 4" />
+            <h3 data-translate="3project4Title">Project 4</h3>
+            <p data-translate="3project4Desc">Description</p>
+            <div class="technologies">
+              <img src="images/python.png" alt="Python" />
             </div>
-            <div class="project">
-                <a href="https://github.com/LV-ANOVOAPPS/Envio_Mail_Claims" target="_blank">
-                    <img src="images/SEND_MAIL.png" alt="Project 5">
-                    <h3 data-translate="3project5Title">Project 5</h3>
-                    <p data-translate="3project5Desc">Description</p>
-                    <div class="technologies">
-                        <img src="images/python.png" alt="Python">
-                        <img src="images/sql.png" alt="SQL">
-                    </div>
-                </a>
+          </a>
+        </div>
+        <div class="project">
+          <a
+            href="https://github.com/LV-ANOVOAPPS/Envio_Mail_Claims"
+            target="_blank"
+          >
+            <img src="images/SEND_MAIL.png" alt="Project 5" />
+            <h3 data-translate="3project5Title">Project 5</h3>
+            <p data-translate="3project5Desc">Description</p>
+            <div class="technologies">
+              <img src="images/python.png" alt="Python" />
+              <img src="images/sql.png" alt="SQL" />
             </div>
-            <div class="project">
-                <a href="https://github.com/LV-ANOVOAPPS/Envio_Mail_Cotizacion" target="_blank">
-                    <img src="images/UPDATE_APP.png" alt="Project 6">
-                    <h3 data-translate="3project6Title">Project 6</h3>
-                    <p data-translate="3project6Desc">Description</p>
-                    <div class="technologies">
-                        <img src="images/c-sharp.png" alt="C#">
-                        <img src="images/sql.png" alt="SQL">
-                    </div>
-                </a>
+          </a>
+        </div>
+        <div class="project">
+          <a
+            href="https://github.com/LV-ANOVOAPPS/Envio_Mail_Cotizacion"
+            target="_blank"
+          >
+            <img src="images/UPDATE_APP.png" alt="Project 6" />
+            <h3 data-translate="3project6Title">Project 6</h3>
+            <p data-translate="3project6Desc">Description</p>
+            <div class="technologies">
+              <img src="images/c-sharp.png" alt="C#" />
+              <img src="images/sql.png" alt="SQL" />
             </div>
-        </section>
+          </a>
+        </div>
+      </section>
 
-        <!-- RPA Development -->
-        <h2 class="projectTitle" data-translate="rpaDevTitle">RPA Development</h2>
-        <section class="category">
-
-            <div class="project">
-                <a href="https://github.com/LizandroV/RPA_AUTOCOMMENTS" target="_blank">
-                    <img src="images/RPA_COMMENT.gif" alt="Project 1">
-                    <h3 data-translate="4project1Title">Project 1</h3>
-                    <p data-translate="4project1Desc">Description</p>
-                    <div class="technologies">
-                        <img src="images/sikuli.jpeg" alt="Sikuli">
-                        <img src="images/python.png" alt="Python">
-                        <img src="images/chatgpt.png" alt="ChatGPT">
-                    </div>
-                </a>
+      <!-- RPA Development -->
+      <h2 class="projectTitle" data-translate="rpaDevTitle">RPA Development</h2>
+      <section class="category">
+        <div class="project">
+          <a
+            href="https://github.com/LizandroV/RPA_AUTOCOMMENTS"
+            target="_blank"
+          >
+            <img src="images/RPA_COMMENT.gif" alt="Project 1" />
+            <h3 data-translate="4project1Title">Project 1</h3>
+            <p data-translate="4project1Desc">Description</p>
+            <div class="technologies">
+              <img src="images/sikuli.jpeg" alt="Sikuli" />
+              <img src="images/python.png" alt="Python" />
+              <img src="images/chatgpt.png" alt="ChatGPT" />
             </div>
-            <div class="project">
-                <a href="https://github.com/LizandroV/RPA_DELETERECYCLE" target="_blank">
-                    <img src="images/RPA_DELETE.gif" alt="Project 2">
-                    <h3 data-translate="4project2Title">Project 2</h3>
-                    <p data-translate="4project2Desc">Description</p>
-                    <div class="technologies">
-                        <img src="images/sikuli.jpeg" alt="Sikuli">
-                        <img src="images/sharepoint.png" alt="SharePoint">
-                    </div>
-                </a>
+          </a>
+        </div>
+        <div class="project">
+          <a
+            href="https://github.com/LizandroV/RPA_DELETERECYCLE"
+            target="_blank"
+          >
+            <img src="images/RPA_DELETE.gif" alt="Project 2" />
+            <h3 data-translate="4project2Title">Project 2</h3>
+            <p data-translate="4project2Desc">Description</p>
+            <div class="technologies">
+              <img src="images/sikuli.jpeg" alt="Sikuli" />
+              <img src="images/sharepoint.png" alt="SharePoint" />
             </div>
-            <div class="project">
-                <a href="https://github.com/LV-RPA/15.46-RPA-AV_CMS" target="_blank">
-                    <img src="images/rpa_update.gif" alt="Project 3">
-                    <h3 data-translate="4project3Title">Project 3</h3>
-                    <p data-translate="4project3Desc">Description</p>
-                    <div class="technologies">
-                        <img src="images/sikuli.jpeg" alt="Sikuli">
-                        <img src="images/python.png" alt="Python">
-                        <img src="images/sql.png" alt="SQL">
-                    </div>
-                </a>
+          </a>
+        </div>
+        <div class="project">
+          <a href="https://github.com/LV-RPA/15.46-RPA-AV_CMS" target="_blank">
+            <img src="images/rpa_update.gif" alt="Project 3" />
+            <h3 data-translate="4project3Title">Project 3</h3>
+            <p data-translate="4project3Desc">Description</p>
+            <div class="technologies">
+              <img src="images/sikuli.jpeg" alt="Sikuli" />
+              <img src="images/python.png" alt="Python" />
+              <img src="images/sql.png" alt="SQL" />
             </div>
-            <div class="project">
-                <a href="https://github.com/LV-RPA/15.34-RPA-AV_SAP" target="_blank">
-                    <img src="images/rpa_transfer.gif" alt="Project 4">
-                    <h3 data-translate="4project4Title">Project 4</h3>
-                    <p data-translate="4project4Desc">Description</p>
-                    <div class="technologies">
-                        <img src="images/sikuli.jpeg" alt="Sikuli">
-                        <img src="images/python.png" alt="Python">
-                        <img src="images/sql.png" alt="SQL">
-                    </div>
-                </a>
+          </a>
+        </div>
+        <div class="project">
+          <a href="https://github.com/LV-RPA/15.34-RPA-AV_SAP" target="_blank">
+            <img src="images/rpa_transfer.gif" alt="Project 4" />
+            <h3 data-translate="4project4Title">Project 4</h3>
+            <p data-translate="4project4Desc">Description</p>
+            <div class="technologies">
+              <img src="images/sikuli.jpeg" alt="Sikuli" />
+              <img src="images/python.png" alt="Python" />
+              <img src="images/sql.png" alt="SQL" />
             </div>
-            <div class="project">
-                <a href="https://github.com/LV-RPA/15.33-RPA-AV_ENTEL" target="_blank">
-                    <img src="images/rpa_web.gif" alt="Project 5">
-                    <h3 data-translate="4project5Title">Project 5</h3>
-                    <p data-translate="4project5Desc">Description</p>
-                    <div class="technologies">
-                        <img src="images/sikuli.jpeg" alt="Sikuli">
-                        <img src="images/python.png" alt="Python">
-                        <img src="images/sql.png" alt="SQL">
-                    </div>
-                </a>
+          </a>
+        </div>
+        <div class="project">
+          <a
+            href="https://github.com/LV-RPA/15.33-RPA-AV_ENTEL"
+            target="_blank"
+          >
+            <img src="images/rpa_web.gif" alt="Project 5" />
+            <h3 data-translate="4project5Title">Project 5</h3>
+            <p data-translate="4project5Desc">Description</p>
+            <div class="technologies">
+              <img src="images/sikuli.jpeg" alt="Sikuli" />
+              <img src="images/python.png" alt="Python" />
+              <img src="images/sql.png" alt="SQL" />
             </div>
-        </section>
+          </a>
+        </div>
+      </section>
     </main>
     <footer>
-        <p>&copy;<span id="year"></span> | Lizandro Vivanco</p>
-        <div class="social">
-            <a href="https://github.com/LizandroV" target="_blank">
-                <img src="images/Github.png" alt="Github icon">
-            </a>
-            <a href="https://www.linkedin.com/in/lvivanco16/?locale=en_US" target="_blank">
-                <img src="images/LinkedIn.png" alt="Linkedin icon">
-            </a>
-        </div>
+      <p>&copy;<span id="year"></span> | Lizandro Vivanco</p>
+      <div class="social">
+        <a href="https://github.com/LizandroV" target="_blank">
+          <img src="images/Github.png" alt="Github icon" />
+        </a>
+        <a
+          href="https://www.linkedin.com/in/lvivanco16/?locale=en_US"
+          target="_blank"
+        >
+          <img src="images/LinkedIn.png" alt="Linkedin icon" />
+        </a>
+      </div>
     </footer>
 
     <script src="scripts/main.js"></script>
-</body>
+  </body>
 </html>
